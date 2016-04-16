@@ -1,0 +1,82 @@
+.bold{
+	font-weight: bold;
+}
+
+#item-summary{
+	padding: 50px 0;
+	background-color: #E6E6E6;
+}
+
+#item-gallery div.col.valign{
+}
+
+#item-gallery div.row img{
+	border: 5px solid white;
+	border-radius: 5px;
+}
+
+#item-quick-info{
+}
+
+#item-quick-info > *{
+	padding: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+#item-quick-info > *:last-child{
+	border-bottom: none;
+}
+
+#item-quick-info > p{
+	font-family: "SourceSansProLight";
+}
+
+#item-quick-info > p#item-name{
+	font-family: "SourceSansPro";
+	font-size: 2em;
+	font-weight: bold; 
+	color: #333742;
+}
+
+#item-quick-info > p#item-name > span {
+	display: block;
+	font-size: 0.5em;
+	font-family: "SourceSansProLight";
+	font-weight: 100;	
+}
+
+#item-quick-info > p#seller-info{
+	font-family: "SourceSansPro";
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+#item-quick-info  p#item-price{
+	-webkit-margin-before: 0px;
+	font-family: "SourceSansPro"; 
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+#item-quick-info form button[type = "submit"]{
+	height: auto !important;
+	margin-top: 20px;
+	padding: 5px 10px;
+}
+
+/*item-description styles*/
+#item-description{
+	/*height: 200px;*/
+	padding: 50px 0;
+}
+
+#item-description h4{
+	padding: 5px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+#item-description p{
+	line-height: 30px !important;
+	letter-spacing: 0.5px;
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+	<title>User Profile</title>
+	<link rel = "stylesheet" href = "css/materialize.css">
+	<link rel = "stylesheet" href = "css/styles.css">
+	<link rel = "stylesheet" href = "css/userstyles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class = ""> 
+
+	<div class = "overlay overlay-contentpush">
+		<span type = "button" class = "overlay-close"></span>
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "#">About</a></li>
+			<li><a href = "#">Work</a></li>
+			<li><a href = "#">Clients</a></li>
+			<li><a href = "#">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class = "row" id = "page">
+		
+		<div class = "row" id = "top-bar">
+			<div class = "col s3 left">
+				<p class = "brand-logo"><a href = "index.html" class = "white-text">DBMS Project</a></p>
+			</div>
+			<div class = "col s9 full-height">
+				<p class = "col s1 offset-s11 center-align icons" id = "menu">
+					<i class = "material-icons waves-effect">menu</i>
+				</p>
+			</div>
+		</div>
+
+		<div class = "row" id = "user-profile">
+			
+			<div class = "col s2" id = "profile-menu">
+				<!-- <p class = "center-align">Menu</p> -->
+				<ul class = "col s12">
+					<li class = "col s12 active">
+						<a href = "javascript:void(0)" data-target = "#profile"><i class = "hide-on-med-and-down material-icons left">perm_identity</i>Profile</a>
+					</li>
+					<li class = "col s12">
+						<a href = "javascript:void(0)" data-target = "#cart"><i class = "hide-on-med-and-down material-icons left">shopping_cart</i>Cart</a>
+					</li>
+					<li class = "col s12">
+						<a href = "javascript:void(0)" data-target = "#purchases"><i class = "hide-on-med-and-down material-icons left">assignment</i>Purchases</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class = "col s10" id = "current-content">
+				<div class = " col s12 active" id = "profile">
+					<div class = "col m6 s12 valign-wrapper" id = "profile-image">
+						<img src = "images/item.png" class = "valign responsive-img">
+					</div>
+					<div class = "col m5 offset-m1 s12" id = "profile-details">
+
+						<div class = "col s12">
+							<h6>Name : </h6>
+							<p>Michael Kumawat</p>
+						</div>
+						<div class = "col s12">
+							<h6>Username : </h6>
+							<p>Miwat</p>
+						</div>
+						<div class = "col s12">
+							<h6>Email -id : </h6>
+							<p>michaelkumawat@aditya.kumawat</p>
+						</div>
+						<div class = "col s12">
+							<h6>Phone no : </h6>
+							<p>9090900909</p>
+						</div>
+						<div class = "col s12">
+							<h6>Shipping Address : </h6>
+							<p>Nothrejksndfs.asdiasdlsak ,aksjdnksajdsakdlkaskdksa,aslkdmsalkdm</p>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class = "col s12" id = "cart">
+					<h5>Cart Items : </h5>
+
+					<!-- Add php code for emptying the cart and confirm the current order -->
+					<div class = "col s3" id = "cart-options">
+						<div class = "col s6 center">
+							<a href = "javasript:void(0)"class = "valign-wrapper btn green waves-effect waves-light">
+								<i class = "material-icons tooltipped hide-on-large-only" data-tooltip = "Empty Cart">remove</i>
+								<span class = "hide-on-med-and-down">Empty Cart</span>
+							</a>
+						</div>
+						<div class = "col s6 center">
+							<a href = "javasript:void(0)" class = "valign-wrapper btn green waves-effect waves-light">
+								<i class = "material-icons tooltipped hide-on-large-only" data-tooltip = "Confirm Order">send</i>
+								<span class = "hide-on-med-and-down">Confirm order</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- Display this if the cart is empty,or else hide this and display the items in the cart -->
+					<div class = "col s12 valign-wrapper hide" id = "empty-message">
+						<i class = "material-icons center large ">info_outline</i>
+						<h3>
+							Your shopping bag seems empty. <br>Go add some.
+						</h3>
+					</div>
+
+					<div class = "row item-card valign-wrapper-custom">
+						<div class = "col m1-5 hide-on-small-only item-image">
+							<img src = "images/item.png" class = "responsive-img">
+						</div>
+						<div class = "col  s12 m3-5 item-info">
+							<div class = "row">
+								<p class = "item-name">330 Logos Bundle</p>
+								<p class = "hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class = "col m2 s12 item-category">
+							<p>Books</p>
+						</div>
+						<div class = "col m2 s12 seller-info">
+							<p>Mega Inc.</p>
+						</div>
+						<div class = "col m2 s12 item-price">
+							<p class = "green-text">Rs.20.00</p>
+						</div>
+						<div class = "col m1 s12 delete">
+							<i class = "material-icons tooltipped" data-position = "left" data-tooltip = "Remove item">delete</i>
+						</div>
+					</div>
+
+					<div class = "row item-card valign-wrapper-custom">
+						<div class = "col m1-5 hide-on-small-only item-image">
+							<img src = "images/item.png" class = "responsive-img">
+						</div>
+						<div class = "col  s12 m3-5 item-info">
+							<div class = "row">
+								<p class = "item-name">330 Logos Bundle</p>
+								<p class = "hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class = "col m2 s12 item-category">
+							<p>Books</p>
+						</div>
+						<div class = "col m2 s12 seller-info">
+							<p>Mega Inc.</p>
+						</div>
+						<div class = "col m2 s12 item-price">
+							<p class = "green-text">Rs.20.00</p>
+						</div>
+						<div class = "col m1 s12 delete">
+							<i class = "material-icons tooltipped" data-position = "left" data-tooltip = "Remove item">delete</i>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class = "col s12" id = "purchases">
+					<h5>Purchase history : </h5>
+
+					<div class = "col s12 valign-wrapper hide" id = "empty-message">
+						<i class = "material-icons center large ">info_outline</i>
+						<h3>
+							No purchases so far.
+						</h3>
+					</div>
+
+					<table class = "responsive-table">
+						<thead>
+							<tr>
+								<th data-field = "row-num">#</th>
+								<th data-field =  "product-name">Product Name</th>
+								<th data-field = "seller-name">Seller Name</th>
+								<th data-field = "order-date">Order Date</th>
+								<th data-field = "delivery-date">Delivery Date</th>
+								<th data-field = "price">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>330 Logos Bundle</td>
+								<td>Mega Inc.</td>
+								<td>20-08-2015</td>
+								<td>21-08-2015</td>
+								<td>Rs.20.00</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>330 Logos Bundle</td>
+								<td>Mega Inc.</td>
+								<td>20-08-2015</td>
+								<td>21-08-2015</td>
+								<td>Rs.20.00</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>330 Logos Bundle</td>
+								<td>Mega Inc.</td>
+								<td>20-08-2015</td>
+								<td>21-08-2015</td>
+								<td>Rs.20.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<footer class = "row">
+		<div class = "col s8 offset-s2">
+			<div class = "col m4 section">
+				<p class = "white-text">Overview</p>
+				<ul>
+					<li><a href = "#">About Us</a></li>
+					<li><a href = "#">FAQs</a></li>
+					<li><a href = "#">Terms</a></li>
+					<li><a href = "#">Privacy</a></li>
+				</ul>
+			</div>
+			<div class = "col m4 section">
+				<p class = "white-text">Create an account</p>
+				<ul>
+					<li><a href = "#">Create Account</a></li>
+					<li><a href = "#">Login</a></li>
+					<li><a href = "#">Edit </a></li>
+				</ul>
+			</div>
+			<div class = "col m4 section">
+				<p class = "white-text">Address</p>
+				<ul>
+					<li>580 Cali Street</li>
+					<li>16 Floor,San Frasco, AS</li>
+					<li>Phone : 209310922</li>
+				</ul>
+			</div>
+		</div>
+		<p class = "col s8 offset-s2">Copyright to us developers</p>
+	</footer>
+
+
+<!-- scripts go here -->
+<script src = "js/jquery-1.12.2.js"></script>
+<script src = "js/materialize.js"></script> 
+<script src = "js/scripts.js"></script> 
+<script>
+
+$(document).ready(function(){
+	$tabs = $("#current-content > div");
+	$tabs.hide();
+	$menuListAnchors = $("#profile-menu ul li a");
+
+	updateContent();
+
+	$menuListAnchors.on("click",function(){
+		$menuListAnchors.closest("li").removeClass("active");
+		$(this).closest("li").addClass("active");
+		updateContent();
+	});
+
+	function updateContent(){
+		$targetId = $("#profile-menu ul li.active a").attr("data-target");
+		$("#current-content > div.active").fadeOut("fast").promise().done(function(){
+			$($targetId).addClass("active").fadeIn();
+		});
+		
+	}
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body{
+	min-width: 500px;
+}
+
+#user-profile{
+	background-color: #2C313E;
+	/*this is a hack */
+}
+
+#profile-menu{
+	background-color: #2C313E;
+	height: 100%;
+	padding: 0px;
+	font-family: "SourceSansPro";
+}
+
+#profile-menu ul{
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	padding: 0px;
+}
+
+
+#profile-menu ul li{
+	padding: 20px;
+	font-size: 1.1em;
+	font-weight: 900;
+	padding-left: 15%;
+}
+
+#profile-menu ul li a{
+	color: #878790 !important;
+}
+
+#profile-menu ul li.active{
+	border-left: 4px solid cornflowerblue;
+}
+
+#profile-menu ul li.active a,
+#profile-menu ul li.active a i{
+	color: #fff !important;
+}
+
+#profile-photo{
+	/*border-radius: 50%;*/
+}
+
+.col.s9-5{
+	width: calc((100%/12) * 9.5);
+}
+
+#current-content{
+	min-height: 70vh;
+	background-color: #E6E6E6;
+}
+
+#current-content > div {
+	padding-bottom: 150px;
+}
+
+/*--- Profile part---*/
+#profile{
+	padding-top: 50px;
+}
+
+#profile #profile-image{
+	padding: 50px 70px;
+}
+
+#profile #profile-image img{
+	transform: rotateZ(4deg);
+}
+
+#profile #profile-details{
+
+}
+
+#profile #profile-details h6{
+	font-family: "SourceSansPro";
+	font-weight: 900;
+	font-size: 1.2em;
+
+}
+
+
+#cart{
+	position: relative;
+}
+
+#cart #cart-options{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+#cart #cart-options a{
+	display: flex !important;
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+#cart #cart-options a > span{
+	display: flex;
+	font-size: 11px;
+}
+
+#current-content > div > h5{
+	font-family: "SourceSansPro";
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 5px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.10);
+}
+
+#empty-message{
+	justify-content: center;
+	align-items: center;
+	color: #6A738A;
+}
+
+#empty-message i{
+	padding : 20px;
+}
+
+#empty-message h3{
+	font-family: "SourceSansProLight";
+}
+
+.item-card.valign-wrapper-custom{
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-family: "SourceSansPro";
+	border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.row .col.m1-5{
+	width: calc((100%/12) * 1.5);
+}	 
+
+.row .col.m3-5{
+	width: calc((100%/12) * 3.5);
+}
+
+.item-card .item-image img{
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+.item-card .item-info p {
+	font-family: "SourceSansProLight";
+	font-size: 0.9em;
+	-webkit-margin-before: 0;	
+	-webkit-margin-after: 0;
+}
+
+.item-card .item-info p.item-name{
+	font-family: "SourceSansPro";
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.item-card .item-category{
+}
+
+.item-card .seller-info{
+}
+
+.item-card .item-price{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.item-card .delete{
+	cursor: pointer;
+	color: #6A738A;
+}
+
+#purchases table{
+	margin-top: 20px;
+}
+
+thead{
+	background-color: #CECACA;
+}
+
+
+tbody tr{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,71 @@
+#form-container{
+	padding: 0 0 20px 0;
+	min-height: 80vh;
+	font-family: "SourceSansProLight";
+}
+
+#form-container>div>p{
+	font-family: "SourceSansPro";
+	font-size: 2em;
+	font-weight: bold;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.10);
+	-webkit-margin-after: 0px !important;
+	padding-bottom: 10px;
+}
+
+#login form,
+#register form{
+	padding: 20px 10px;
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+	color: #4CAF50;
+	background-color: #4CAF50;
+}
+
+.input-field .prefix.active{
+	color: #4CAF50;
+}
+
+input[type="text"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid #4CAF50;
+	box-shadow: 0 1px 0 0 #4CAF50;
+}
+
+input[type="text"]:focus:not([readonly]) + label,
+input[type="email"]:focus:not([readonly]) + label,
+input[type="password"]:focus:not([readonly]) + label,
+input[type="password"]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label{
+	color: #4CAF50;
+}
+
+#chooseForRegistration{
+	display: none;
+}
+
+#chooseForRegistration > div{
+	padding: 50px 0px;
+}
+
+#chooseForRegistration > div:first-child{
+	border-right: 2px solid rgba(0, 0, 0, 0.10);
+}
+
+#chooseForRegistration i{
+	background: #2C313E;
+	color: #6A738A;
+	padding: 20px;
+	border-radius: 50%;
+}
+
+#chooseForRegistration p{
+	color: #6A738A;
+	font-family: "SourceSansPro";
+	font-size: 1.2em;
+	font-weight: bold;
+}
