@@ -27,10 +27,10 @@
 			<div class = "col s9 full-height">
 				<p class = "col s1 offset-s8-5 center-align icons" id = "account">
 					<!-- IF NOT LOGGED IN  -->
-					<a href = "login.html"><i class = "material-icons waves-effect">account_circle</i></a>
+					<!-- <a href = "login.html"><i class = "material-icons waves-effect">account_circle</i></a> -->
 					
 					<!-- IF A USER IS LOGGED IN -->
-					<!-- <a href = "javscript:void(0)" data-target = ""><i class = "material-icons waves-effect">account_circle</i></a> -->
+					<a href = "javscript:void(0)" data-target = ""><i class = "material-icons waves-effect">account_circle</i></a>
 				</p>
 				<p class = "col s1 offset-s0-5 center-align icons" id = "shoppingcart">
 					<i class = "material-icons waves-effect">shopping_cart</i>
@@ -39,18 +39,16 @@
 					<i class = "material-icons waves-effect">menu</i>
 				</p>
 
-				<div class = "hide" id = "logged-in-user-opts">
-					<div class = "" id = "account-opts">
-						<a href = "">
-							My Account
-						</a>
-						<a href = "">
-							Logout
-						</a>
-					</div>
-					<div class = "" id = "cart-opts">
-					</div>
+				<div class = "opts " id = "account-opts">
+					<a href = "#userprofile.html" class = "btn waves-effect center">My Account</a>
+					<form class = "center" action = "" method = "post">
+						<button class = "btn waves-effect" type = "submit" >Logout</button>
+					</form>
 				</div>
+		
+				<div class = "opts" id = "cart-opts">
+				</div>
+			
 			</div>
 		</div>
 

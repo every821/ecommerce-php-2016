@@ -146,14 +146,6 @@ html{
 	background :#333742;
 }
 
-#logged-in-user-opts{
-	position: absolute;
-	right: 0;
-	top: 90px;
-	width: 300px;
-	background-color: #33AA66;
-}
-
 p.brand-logo{
 	font-family: "Pacifico";
 	font-size: 1.5em;
@@ -170,11 +162,39 @@ p.icons i{
 	border-radius: 50%;
 }
 
-#logged-in-user-opts > div{
+div.opts{
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 90px;
 }
+
+.opts#account-opts{
+	/*background-color: #33AA66;*/
+	background-color: #333742;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.opts#account-opts a{
+	color: black !important;
+	font-size: 1.2em;
+	font-family: "SourceSansPro";
+	font-weight: 900;
+}
+
+#logged-in-user-opts #cart-opts{
+	/*background-color: #33AA66;*/
+	background-color: #333742;
+}
+
+#logged-in-user-opts #cart-opts a{
+	display: block;
+	color: #6A738A;
+	padding: 15px 30px;
+	font-size: 1.2em;
+	font-family: "SourceSansPro";
+	font-weight: 900;
+}
+
 
 .offset-s8-5{
 	margin-left: calc((100%/12) * 8.5) !important;

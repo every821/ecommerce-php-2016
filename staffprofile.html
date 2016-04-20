@@ -243,14 +243,14 @@
 <script>
 
 $(document).ready(function(){
-	$tabs = $("#current-content > div");
-	$tabs.hide();
-	$menuListAnchors = $("#profile-menu ul li a");
-	$profileTab = $("#profile #profile-wrapper");
-	$productTab = $("#products #products-wrapper");
-	$editProfile = $("#profile-options a");
-	$addProduct = $("#product-options a");
+	var $tabs = $("#current-content > div"),
+		$menuListAnchors = $("#profile-menu ul li a"),
+		$profileTab = $("#profile #profile-wrapper"),
+		$productTab = $("#products #products-wrapper"),
+		$editProfile = $("#profile-options a"),
+		$addProduct = $("#product-options a");
 
+	$tabs.hide();
 	updateContent();
 
 	$menuListAnchors.on("click",function(){
