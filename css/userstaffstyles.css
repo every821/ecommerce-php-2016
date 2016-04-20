@@ -82,27 +82,43 @@ body{
 
 }
 
+#profile>div#register>p,
+#products>div#register>p{
+	font-family: "SourceSansPro";
+	font-size: 2em;
+	font-weight: bold;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.10);
+	-webkit-margin-after: 0px !important;
+	padding-bottom: 10px;
+}
 
-#cart{
+#cart, #profile, #products{
 	position: relative;
 }
 
-#cart #cart-options{
+#cart #cart-options,
+#profile #profile-options,
+#products #product-options{
 	position: absolute;
 	right: 0;
 	top: 10px;
 }
 
-#cart #cart-options a{
+#cart #cart-options a,
+#profile #profile-options a,
+#products #product-options a{
 	display: flex !important;
 	padding: 5px;
 	align-items: center;
 	justify-content: center;
 }
 
-#cart #cart-options a > span{
+#cart #cart-options a > span,
+#profile #profile-options a > span,
+#products #product-options a > span{
 	display: flex;
-	font-size: 11px;
+	line-height: initial;
+	font-size: 10px;
 }
 
 #current-content > div > h5{

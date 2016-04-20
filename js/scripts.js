@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
-
+	// hover changes on items
 	$(".case .item").hover(
 		function(){
-			console.log("Entered");
 			$(this).find("button").fadeToggle("fast");
 		},
 		function(){
@@ -15,6 +14,7 @@ $(document).ready(function(){
 		e.preventDefault();
 	});	
 
+	// scripts for navbar
 	(function() {
 
 		var $container = $("div#page"),

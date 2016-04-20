@@ -68,13 +68,13 @@ html{
 
 .overlay ul li {
 	text-align: center;
-	height: calc(100% / 7);
+	height: calc(100% /8);
 	min-height: 54px;
 }
 
 .overlay ul li a {
 	font-family: "SourceSansProLight";
-	font-size: 4em;
+	font-size: 3.8em;
 	color: white;
 	transition: color 0.2s;
 }
@@ -142,16 +142,21 @@ html{
 }
 
 #top-bar{
+	position: relative;
 	background :#333742;
+}
+
+#logged-in-user-opts{
+	position: absolute;
+	right: 0;
+	top: 90px;
+	width: 300px;
+	background-color: #33AA66;
 }
 
 p.brand-logo{
 	font-family: "Pacifico";
 	font-size: 1.5em;
-}
-
-#search{
-	margin-top: 20px;
 }
 
 p.icons{
@@ -165,6 +170,20 @@ p.icons i{
 	border-radius: 50%;
 }
 
+#logged-in-user-opts > div{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.offset-s8-5{
+	margin-left: calc((100%/12) * 8.5) !important;
+}
+
+.offset-s0-5{
+	margin-left: calc((100%/12) * 0.25) !important;
+}
+
 .no-margin{
 	margin: 0 !important;
 }
@@ -174,8 +193,7 @@ p.icons i{
 	margin-bottom: -6px;
 }
 
-#home-showcase.row.showcase{
-	/*height: auto;*/
+.row.showcase{
 	background-color: #E6E6E6;
 }
 
@@ -192,10 +210,6 @@ p.icons i{
 	font-weight: 500;
 }
 
-.showcase .case p i{
-	/*color: #6A738A;*/
-}
-
 .col.s2-5{
 	width: calc((100%/12) * 2.5);
 }
@@ -206,15 +220,26 @@ p.icons i{
 	overflow: hidden;
 	font-family: "SourceSansProLight";
 	margin: 0px calc((100%/12) * 0.333);
+	margin-bottom: 40px;
 }
 
+.case .item:nth-of-type(4n + 1){
+	margin-left: 0;
+	clear: left;
+}
+
+.case .item:nth-of-type(4n){
+	margin-right: 0;
+	clear: right;
+}
+/*
 .case .item:first-of-type{
 	margin-left: 0;
 }
 
 .case .item:last-of-type{
 	margin-right: 0;
-}
+}*/
 
 .case .item img{
 	border-radius: 4px;
@@ -235,11 +260,10 @@ button#buy-btn{
 	display: none;
 	top: 60%;
 	left: 37%;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22) , 0px -60px 0px 200px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22) , 0px -60px 0px 200px rgba(0,0,0,0.05);
 }
 
 footer{
-	/*height: 400px;*/
 	background :#333742;	
 }
 

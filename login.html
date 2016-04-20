@@ -4,7 +4,7 @@
 	<title>Login</title>
 	<link rel = "stylesheet" href = "css/materialize.css">
 	<link rel = "stylesheet" href = "css/styles.css">
-	<link rel = "stylesheet" href = "css/loginRegistrationstyles.css">
+	<link rel = "stylesheet" href = "css/loginregistrationstyles.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class = ""> 
@@ -13,10 +13,9 @@
 		<span type = "button" class = "overlay-close"></span>
 		<ul>
 			<li><a href = "index.html">Home</a></li>
-			<li><a href = "#">About</a></li>
-			<li><a href = "#">Work</a></li>
-			<li><a href = "#">Clients</a></li>
-			<li><a href = "#">Contact</a></li>
+			<li><a href = "#">Books</a></li>
+			<li><a href = "#">Electronics</a></li>
+			<li><a href = "#">Other</a></li>
 		</ul>
 	</div>
 	
@@ -120,7 +119,7 @@
 		});
 		$chooseRegistration.find("#customer").on("click",function(){
 			$.ajax({
-				url : "memberRegistration.html",
+				url : "ajaxmodules/memberRegistration.html",
 				success: function(result){
 					console.log(result);
 					var regForm = result;
@@ -134,7 +133,7 @@
 
 		$chooseRegistration.find("#staff").on("click",function(){
 			$.ajax({
-				url : "staffRegistration.html",
+				url : "ajaxmodules/staffRegistration.html",
 				success: function(result){
 					console.log(result);
 					var regForm = result;

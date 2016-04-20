@@ -38,8 +38,8 @@
 				<p class = "col s1 offset-s0-5 center-align icons" id = "menu">
 					<i class = "material-icons waves-effect">menu</i>
 				</p>
-
-				<div class = "hide" id = "logged-in-user-opts">
+				<!-- 
+				<div class = "" id = "logged-in-user-opts">
 					<div class = "" id = "account-opts">
 						<a href = "">
 							My Account
@@ -51,6 +51,7 @@
 					<div class = "" id = "cart-opts">
 					</div>
 				</div>
+				-->
 			</div>
 		</div>
 
@@ -58,73 +59,10 @@
 			<img class = "responsive-img" src = "images/slideshow-back-1.png"/>
 		</div>
 
-		<div class = "row showcase" id = "home-showcase">
+		<div class = "row showcase" id = "books-showcase">
 
 			<div class = "col m10 offset-m1 s12 case" id = "books">
-				<p class = "col s12 valign-wrapper">
-					<a href = "books.php" class = "black-text tooltipped" data-tooltip = "Click for more items" data-position = "right">
-						Books<i class = "right material-icons small valign">keyboard_arrow_right</i>
-					</a>
-				</p>
 
-				<a class = "col s2-5 white hoverable item center-align black-text" href = "itempage.html">
-					<img src = "images/items.png" class = "responsive-img">
-					<p class = "item-name ">GROWLER Scripts</p>
-					<p class = "item-desc no-margin">The best in the market. Just for you. The best in the market. Just for you....</p>
-					<p class = "item-price green-text">15.00</p>
-					<!-- <a href = "itempage.html" class = "btn-floating btn-large green white-text center" id = "more-btn">
-						<i class = "material-icons waves-effect waves-light">more_horiz</i>
-					</a> -->
-					<form action = "nothing.php"> 
-						<button class = "btn-floating btn-large green white-text" id = "buy-btn" type = "submit">
-							<i class = "material-icons waves-effect waves-light">add_shopping_cart</i>
-						</button>
-					</form>
-				</a>
-
-				<a class = "col s2-5 white hoverable item center-align black-text" href = "itempage.html">
-					<img src = "images/items.png" class = "responsive-img">
-					<p class = "item-name ">GROWLER Scripts</p>
-					<p class = "item-desc no-margin">The best in the market. Just for you. The best in the market. Just for you....</p>
-					<p class = "item-price green-text">15.00</p>
-					<form action = "nothing.php"> 
-						<button class = "btn-floating btn-large green white-text" id = "buy-btn" type = "submit">
-							<i class = "material-icons waves-effect waves-light">add_shopping_cart</i>
-						</button>
-					</form>
-				</a>
-
-				<a class = "col s2-5 white hoverable item center-align black-text" href = "itempage.html">
-					<img src = "images/items.png" class = "responsive-img">
-					<p class = "item-name ">GROWLER Scripts</p>
-					<p class = "item-desc no-margin">The best in the market. Just for you. The best in the market. Just for you....</p>
-					<p class = "item-price green-text">15.00</p>
-					<form action = "nothing.php"> 
-						<button class = "btn-floating btn-large green white-text" id = "buy-btn" type = "submit">
-							<i class = "material-icons waves-effect waves-light">add_shopping_cart</i>
-						</button>
-					</form>
-				</a>
-
-				<a class = "col s2-5 white hoverable item center-align black-text" href = "itempage.html">
-					<img src = "images/items.png" class = "responsive-img">
-					<p class = "item-name ">GROWLER Scripts</p>
-					<p class = "item-desc no-margin">The best in the market. Just for you. The best in the market. Just for you....</p>
-					<p class = "item-price green-text">15.00</p>
-					<form action = "nothing.php"> 
-						<button class = "btn-floating btn-large green white-text" id = "buy-btn" type = "submit">
-							<i class = "material-icons waves-effect waves-light">add_shopping_cart</i>
-						</button>
-					</form>
-				</a>
-			</div>
-
-			<div class = "col m10 offset-m1 s12 case" id = "electronics">
-				<p class = "col s12 valign-wrapper">
-					<a href = "electronics.php" class = "black-text tooltipped" data-tooltip = "Click for more items" data-position = "right">
-						Electronics<i class = "right material-icons small valign">keyboard_arrow_right</i>
-					</a>
-				</p>
 				<a class = "col s2-5 white hoverable item center-align black-text" href = "itempage.html">
 					<img src = "images/items.png" class = "responsive-img">
 					<p class = "item-name ">GROWLER Scripts</p>
@@ -172,14 +110,7 @@
 						</button>
 					</form>
 				</a>
-			</div>
 
-			<div class = "col m10 offset-m1 s12 case" id = "new-products">
-				<p class = "col s12 valign-wrapper">
-					<a href = "other.php" class = "black-text tooltipped" data-tooltip = "Click for more items" data-position = "right">
-						Other<i class = "right material-icons small valign">keyboard_arrow_right</i>
-					</a>
-				</p>
 				<a class = "col s2-5 white hoverable item center-align black-text" href = "itempage.html">
 					<img src = "images/items.png" class = "responsive-img">
 					<p class = "item-name ">GROWLER Scripts</p>
