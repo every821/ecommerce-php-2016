@@ -12,9 +12,9 @@
 		<span type = "button" class = "overlay-close"></span>
 		<ul>
 			<li><a href = "index.html">Home</a></li>
-			<li><a href = "#">Books</a></li>
-			<li><a href = "#">Electronics</a></li>
-			<li><a href = "#">Other</a></li>
+			<li><a href = "books.php">Books</a></li>
+			<li><a href = "electronics.php">Electronics</a></li>
+			<li><a href = "other.php">Other</a></li>
 		</ul>
 	</div>
 
@@ -25,30 +25,25 @@
 				<p class = "brand-logo"><a href = "index.html" class = "white-text">DBMS Project</a></p>
 			</div>
 			<div class = "col s9 full-height">
-				<p class = "col s1 offset-s8-5 center-align icons" id = "account">
-					<!-- IF NOT LOGGED IN  -->
+				<div class = "col s1 offset-s10 center-align icons" id = "account">
+					<!-- IF NOT LOGGED IN -->
 					<!-- <a href = "login.html"><i class = "material-icons waves-effect">account_circle</i></a> -->
 					
 					<!-- IF A USER IS LOGGED IN -->
 					<a href = "javscript:void(0)" data-target = ""><i class = "material-icons waves-effect">account_circle</i></a>
-				</p>
-				<p class = "col s1 offset-s0-5 center-align icons" id = "shoppingcart">
-					<i class = "material-icons waves-effect">shopping_cart</i>
-				</p>
-				<p class = "col s1 offset-s0-5 center-align icons" id = "menu">
+					<ul class = "" id = "account-opts">
+						<li><a href = "staffprofile.html" class = ""><i class = "material-icons left prefix">person</i>My Account</a></li>
+						<li><i class = "material-icons left">shopping_cart</i>0 items in cart</li>
+						<li class = "center-align">
+							<form action = "#" class = "center-align">
+								<button type = "submit" value = "logout" class = "btn waves-effect waves-light">Log out</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class = "col s1 center-align icons" id = "menu">
 					<i class = "material-icons waves-effect">menu</i>
-				</p>
-
-				<div class = "opts " id = "account-opts">
-					<a href = "#userprofile.html" class = "btn waves-effect center">My Account</a>
-					<form class = "center" action = "" method = "post">
-						<button class = "btn waves-effect" type = "submit" >Logout</button>
-					</form>
-				</div>
-		
-				<div class = "opts" id = "cart-opts">
-				</div>
-			
+				</div> 
 			</div>
 		</div>
 

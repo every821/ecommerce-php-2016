@@ -14,9 +14,9 @@
 		<span type = "button" class = "overlay-close"></span>
 		<ul>
 			<li><a href = "index.html">Home</a></li>
-			<li><a href = "#">Books</a></li>
-			<li><a href = "#">Electronics</a></li>
-			<li><a href = "#">Other</a></li>
+			<li><a href = "books.php">Books</a></li>
+			<li><a href = "electronics.php">Electronics</a></li>
+			<li><a href = "other.php">Other</a></li>
 		</ul>
 	</div>
 
@@ -27,9 +27,9 @@
 				<p class = "brand-logo"><a href = "index.html" class = "white-text">DBMS Project</a></p>
 			</div>
 			<div class = "col s9 full-height">
-				<p class = "col s1 offset-s11 center-align icons" id = "menu">
+				<div class = "col s1 offset-s11 center-align icons" id = "menu">
 					<i class = "material-icons waves-effect">menu</i>
-				</p>
+				</div> 
 			</div>
 		</div>
 
@@ -38,17 +38,25 @@
 			<div class = "col s2" id = "profile-menu">
 				<!-- <p class = "center-align">Menu</p> -->
 				<ul class = "col s12">
-					<li class = "col s12 active">
+					<li class = "col s12 nav active">
 						<a href = "javascript:void(0)" data-target = "#profile"><i class = "hide-on-med-and-down material-icons left">perm_identity</i>Profile</a>
 					</li>
-					<li class = "col s12">
+					<li class = "col s12 nav">
 						<a href = "javascript:void(0)" data-target = "#products"><i class = "hide-on-med-and-down material-icons left">shopping_cart</i>Products</a>
 					</li>
-					<li class = "col s12">
+					<li class = "col s12 nav">
+						<a href = "javascript:void(0)" data-target = "#addproducts"><i class = "hide-on-med-and-down material-icons left">add</i>Add product</a>
+					</li>
+					<li class = "col s12 nav">
 						<a href = "javascript:void(0)" data-target = "#purchases"><i class = "hide-on-med-and-down material-icons left">assignment</i>Purchases</a>
 					</li>
-					<li class = "col s12">
+					<li class = "col s12 nav">
 						<a href = "javascript:void(0)" data-target = "#statistics"><i class = "hide-on-med-and-down material-icons left">equalizer</i>View Statistics</a>
+					</li>
+					<li>
+						<form action = "#" class = "left">
+							<button type = "submit" value = "logout" class = "btn waves-effect waves-light">Log out</button>
+						</form>
 					</li>
 				</ul>
 			</div>
@@ -57,86 +65,187 @@
 
 
 				<div class = " col s12 active" id = "profile">
-					<div class = "" id = "profile-wrapper">
-						<div class = "col s3" id = "profile-options">
-							<div class = "col s6 offset-s6 center">
-								<a href = "javasript:void(0)" class = "valign-wrapper btn green waves-effect waves-light">
-									<i class = "material-icons tooltipped hide-on-large-only" data-tooltip = "Edit Profile">edit</i>
-									<span class = "hide-on-med-and-down">Edit Profile</span>
-								</a>
-							</div>
-						</div> 
-						<div class = "col m6 s12 valign-wrapper" id = "profile-image">
-							<img src = "images/item.png" class = "valign responsive-img">
+					<div class = "col s3" id = "profile-options">
+						<div class = "col s6 offset-s6 center">
+							<a href = "javasript:void(0)" class = "valign-wrapper btn green waves-effect waves-light">
+								<i class = "material-icons tooltipped hide-on-large-only" data-tooltip = "Edit Profile">edit</i>
+								<span class = "hide-on-med-and-down">Edit Profile</span>
+							</a>
 						</div>
-						<div class = "col m5 offset-m1 s12" id = "profile-details">
+					</div> 
+					<div class = "col m6 s12 valign-wrapper" id = "profile-image">
+						<img src = "images/item.png" class = "valign responsive-img">
+					</div>
+					<div class = "col m5 offset-m1 s12" id = "profile-details">
 
-							<div class = "col s12">
-								<h6>Name : </h6>
-								<p>Michael Kumawat</p>
-							</div>
-							<div class = "col s12">
-								<h6>Username : </h6>
-								<p>Miwat</p>
-							</div>
-							<div class = "col s12">
-								<h6>Email -id : </h6>
-								<p>michaelkumawat@aditya.kumawat</p>
-							</div>
-							<div class = "col s12">
-								<h6>Phone no : </h6>
-								<p>9090900909</p>
-							</div>
-							<div class = "col s12">
-								<h6>Address : </h6>
-								<p>Nothrejksndfs.asdiasdlsak ,aksjdnksajdsakdlkaskdksa,aslkdmsalkdm</p>
-							</div>
+						<div class = "col s12">
+							<h6>Name : </h6>
+							<p>Michael Kumawat</p>
+						</div>
+						<div class = "col s12">
+							<h6>Username : </h6>
+							<p>Miwat</p>
+						</div>
+						<div class = "col s12">
+							<h6>Email -id : </h6>
+							<p>michaelkumawat@aditya.kumawat</p>
+						</div>
+						<div class = "col s12">
+							<h6>Phone no : </h6>
+							<p>9090900909</p>
+						</div>
+						<div class = "col s12">
+							<h6>Address : </h6>
+							<p>Nothrejksndfs.asdiasdlsak ,aksjdnksajdsakdlkaskdksa,aslkdmsalkdm</p>
 						</div>
 					</div>
 				</div>
 				
-				<div class = "col s12" id = "products">
-					<div class = "" id = "products-wrapper">	
-						<h5>Products Added : </h5>
-						<div class = "col s3" id = "product-options">
-							<div class = "col s6 offset-s6 center">
-								<a href = "javasript:void(0)" class = "valign-wrapper btn green waves-effect waves-light">
-									<i class = "material-icons tooltipped hide-on-large-only" data-tooltip = "Add product">add</i>
-									<span class = "hide-on-med-and-down">Add product</span>
-								</a>
-							</div>
-						</div> 
-						<!-- Display this if the cart is empty,or else hide this and display the items in the cart -->
-						<div class = "col s12 valign-wrapper hide" id = "empty-message">
-							<i class = "material-icons center large ">info_outline</i>
-							<h3>
-								You have not added any products.
-							</h3>
+				<div class = " col s12 active" id = "editprofile">
+					<a id = "cancel-editing" href = "javascript:void(0)" class = "btn-floating btn-large red waves-effect waves-light">
+						<i class = "material-icons">clear</i>
+					</a>
+					<p class = "center-align">Edit details</p>
+					<div class = "col m6 s12 valign-wrapper" id = "change-profile-image">
+						<input type = "file" id = "image3" name = "image3">
+						<label class = "" for = "image3">
+							<img src = "images/item.png" class = "responsive-img">
+							<p class = "center-align">Click to change your photo.</p>
+						</label>
+					</div>
+					<form class = "col m5 offset-m1 s12" action = "" method = "get">
+						<div class = "input-field col s12">
+							<input id = "firstname" type = "text" class = "validate" name = "firstname" value = "Michael" required>
+							<label for = "firstname">First name</label>
 						</div>
-						<div class = "row item-card valign-wrapper-custom">
-							<div class = "col m1-5 hide-on-small-only item-image">
-								<img src = "images/item.png" class = "responsive-img">
+						<div class = "input-field col s12">
+							<input id = "lastname" type = "text" class = "validate" name = "lastname" value = "Kumawat" required>
+							<label for = "lastname">Last name</label>
+						</div>
+						<div class = "input-field col m6 s12">
+							<input id = "email" type = "email" class = "validate" name = "email" value = "michaelkumawat@aditya.kumawat" required>
+							<label for = "email">Email-id</label>
+						</div>
+						<div class = "input-field col m6 s12">
+							<input id = "phone" type = "text" class = "validate" name = "phone" value = "9090900909" required>
+							<label for = "phone">Phone</label>
+						</div>
+						<div class = "input-field col m6 s12">
+							<input id = "oldpassword" type = "password" class = "validate" name = "oldpassword" required>
+							<label for = "oldpassword">Old password</label>
+						</div>
+						<div class = "input-field col m6 s12">
+							<input id = "newpassword" type = "password" class="validate" name = "newpassword" required>
+							<label for = "newpassword">Password</label>
+						</div>
+						<div class = "input-field col s12">
+							<textarea id = "address" name = "address" required class = "materialize-textarea" value = "Nothrejksndfs.asdiasdlsak ,aksjdnksajdsakdlkaskdksa,aslkdmsalkdm"></textarea>
+							<label for = "address">Address</label>
+						</div>
+						<button class = "btn green waves-effect waves-light" type = "submit" name = "action">
+							Submit<i class = "material-icons right">send</i>
+						</button>
+					</form>
+				</div>
+
+				<div class = "col s12" id = "products">
+					<h5>Products Added : </h5>
+					<!-- Display this if the cart is empty,or else hide this and display the items in the cart -->
+					<div class = "col s12 valign-wrapper hide" id = "empty-message">
+						<i class = "material-icons center large ">info_outline</i>
+						<h3>
+							You have not added any products.
+						</h3>
+					</div>
+					<div class = "row item-card valign-wrapper-custom">
+						<div class = "col m1-5 hide-on-small-only item-image">
+							<img src = "images/item.png" class = "responsive-img">
+						</div>
+						<div class = "col  s12 m3-5 item-info">
+							<div class = "row">
+								<p class = "item-name">330 Logos Bundle</p>
+								<p class = "hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
-							<div class = "col  s12 m3-5 item-info">
-								<div class = "row">
-									<p class = "item-name">330 Logos Bundle</p>
-									<p class = "hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class = "col m2 s12 item-category">
+							<p>Books</p>
+						</div>
+						<div class = "col m2 s12 seller-info">
+							<p>Mega Inc.</p>
+						</div>
+						<div class = "col m2 s12 item-price">
+							<p class = "green-text">Rs.20.00</p>
+						</div>
+						<div class = "col m1 s12 delete">
+							<i class = "material-icons tooltipped" data-position = "left" data-tooltip = "Remove item">delete</i>
+						</div>
+					</div>
+				</div>
+
+				<div class = "col s12" id = "addproducts">	
+					<h5>Add a new product: </h5>
+
+					<div class = "row item-card valign-wrapper-custom">
+						<form class = "col s8 offset-s2 center" action = "" method = "get">
+							<div class = "col s12">
+								<div class = "input-field col m12 s12">
+									<input id = "itemname" type = "text" class = "validate" name = "itemname" required>
+									<label for = "itemname">Item name</label>
 								</div>
 							</div>
-							<div class = "col m2 s12 item-category">
-								<p>Books</p>
+							<div class = "col s12">
+								<div class = "input-field col m6 s12">
+									<input id = "quantity" type = "number" min = "0" class = "validate" name = "quantity" required>
+									<label for = "quantity">Quantity</label>
+								</div>
+								<div class = "input-field col m6 s12">
+									<input id = "price" type = "number" class = "validate" name = "price" required>
+									<label for = "price">Price</label>
+								</div>
 							</div>
-							<div class = "col m2 s12 seller-info">
-								<p>Mega Inc.</p>
+							<div class = "col s12">
+								<div class = "input-field col s12">
+									<textarea id = "description" name = "description" class = "materialize-textarea"></textarea>
+									<label for = "description">Description</label>
+								</div>
 							</div>
-							<div class = "col m2 s12 item-price">
-								<p class = "green-text">Rs.20.00</p>
+							
+							<div class = "col s12" id = "image-upload-area">
+								<p class = "">Item images<small>(At least one is required)</small>:</p>
+								<div class="col s2-5 image-upload">
+									<input type = "file" id = "image1" name = "image1" required>
+									<label class = "" for = "image1">
+										<img src = "images/itemDefault.png" class = "responsive-img">
+										<p class = "center-align">#1</p>
+									</label>
+								</div>
+								<div class="col s2-5 image-upload">
+									<input type = "file" id = "image2" name = "image2">
+									<label class = "" for = "image2">
+										<img src = "images/itemDefault.png" class = "responsive-img">
+										<p class = "center-align">#2</p>
+									</label>
+								</div>
+								<div class="col s2-5 image-upload">
+									<input type = "file" id = "image3" name = "image3">
+									<label class = "" for = "image3">
+										<img src = "images/itemDefault.png" class = "responsive-img">
+										<p class = "center-align">#3</p>
+									</label>
+								</div>
+								<div class="col s2-5 image-upload">
+									<input type = "file" id = "image4" name = "image4">
+									<label class = "" for = "image4">
+										<img src = "images/itemDefault.png" class = "responsive-img">
+										<p class = "center-align">#4</p>
+									</label>
+								</div>
 							</div>
-							<div class = "col m1 s12 delete">
-								<i class = "material-icons tooltipped" data-position = "left" data-tooltip = "Remove item">delete</i>
-							</div>
-						</div>
+							<button class = "btn btn-large green waves-effect waves-light" type = "submit" name = "action">
+								Add<i class = "material-icons right">send</i>
+							</button>
+						</form>
 					</div>
 				</div>
 				
@@ -240,59 +349,6 @@
 <script src = "js/jquery-1.12.2.js"></script>
 <script src = "js/materialize.js"></script> 
 <script src = "js/scripts.js"></script> 
-<script>
-
-$(document).ready(function(){
-	var $tabs = $("#current-content > div"),
-		$menuListAnchors = $("#profile-menu ul li a"),
-		$profileTab = $("#profile #profile-wrapper"),
-		$productTab = $("#products #products-wrapper"),
-		$editProfile = $("#profile-options a"),
-		$addProduct = $("#product-options a");
-
-	$tabs.hide();
-	updateContent();
-
-	$menuListAnchors.on("click",function(){
-		$menuListAnchors.closest("li").removeClass("active");
-		$(this).closest("li").addClass("active");
-		updateContent();
-	});
-
-	function updateContent(){
-		$targetId = $("#profile-menu ul li.active a").attr("data-target");
-		$("#current-content > div.active").fadeOut("fast").promise().done(function(){
-			$($targetId).addClass("active").fadeIn();
-		});
-		
-	}
-
-	$editProfile.on("click",function(){
-		$.ajax({
-				url : "ajaxmodules/staffRegistration.html",
-				success: function(result){
-					var regForm = result;
-					$profileTab.fadeOut("slow").promise().done(function() {
-						console.log(regForm);
-						$("#profile").append(regForm);
-					});
-				}
-			});
-	});
-
-	$addProduct.on("click",function(){
-		$.ajax({
-				url : "ajaxmodules/staffRegistration.html",
-				success: function(result){
-					var regForm = result;
-					$productTab.fadeOut("slow").promise().done(function() {
-						$("#products").append(regForm);
-					});
-				}
-			});
-	});
-
-});
-</script>
+<script src = "js/profilescripts.js"></script> 
 </body>
 </html>

@@ -30,6 +30,7 @@
 input[type="text"]:focus:not([readonly]),
 input[type="email"]:focus:not([readonly]),
 input[type="password"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
 input[type="tel"]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]){
 	border-bottom: 1px solid #4CAF50;
@@ -39,6 +40,7 @@ textarea.materialize-textarea:focus:not([readonly]){
 input[type="text"]:focus:not([readonly]) + label,
 input[type="email"]:focus:not([readonly]) + label,
 input[type="password"]:focus:not([readonly]) + label,
+input[type="number"]:focus:not([readonly]) + label ,
 input[type="password"]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label{
 	color: #4CAF50;

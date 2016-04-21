@@ -151,53 +151,81 @@ p.brand-logo{
 	font-size: 1.5em;
 }
 
-p.icons{
+p.brand-logo a:hover{
+	color: #4CAF50 !important;
+	transition : color 0.5s;
+}
+
+div.icons{
+	position: relative;
+	cursor: pointer;
+	margin-top: 10px;
 	font-size: 1em;
 }
 
-p.icons i{
+div.icons i{
 	padding: 15px;
 	background: #2C313E;
 	color: #6A738A;
 	border-radius: 50%;
 }
 
-div.opts{
+#account-opts{
 	position: absolute;
-	top: 90px;
-}
-
-.opts#account-opts{
-	/*background-color: #33AA66;*/
-	background-color: #333742;
+	top: 120%;
+	right: -58px;
+	width: 200px;
+	z-index: 5;
+	padding: 0px 10px;
 	border-radius: 4px;
-	padding: 10px;
+	background: #2C313E;
 }
 
-.opts#account-opts a{
-	color: black !important;
-	font-size: 1.2em;
+#account-opts:before{
+	position: absolute;
+	content: "";
+	top: -9px;
+	left: calc(50% - 10px);
+	width: 20px;
+	height: 20px;
+	z-index: -1;
+	border-radius: 4px;
+	transform: rotateZ(45deg);
+	background-color: #2C313E;
+}
+
+#account-opts li{
 	font-family: "SourceSansPro";
-	font-weight: 900;
-}
-
-#logged-in-user-opts #cart-opts{
-	/*background-color: #33AA66;*/
-	background-color: #333742;
-}
-
-#logged-in-user-opts #cart-opts a{
-	display: block;
+	font-size: 1.1em;
+	padding: 20px 20px 20px 10px; 
+	text-align: left;
 	color: #6A738A;
-	padding: 15px 30px;
-	font-size: 1.2em;
-	font-family: "SourceSansPro";
-	font-weight: 900;
+	border-bottom: 1px solid #6A738A;
 }
 
+#account-opts li a{
+	color: inherit;
+}
 
-.offset-s8-5{
-	margin-left: calc((100%/12) * 8.5) !important;
+#account-opts li:last-of-type{
+	border-bottom: none;
+}
+
+#account-opts li i{
+	cursor: initial;
+	padding: 5px 5px;
+	font-size: 1em;
+}
+
+#account-opts li button{
+	font-size: 0.9em;
+	border-radius: 18px;
+	color: #9097A9;
+	background: #232733;
+}
+
+.offset-s9-5{
+	margin-left: calc((100%/12) * 9.5) !important;
 }
 
 .offset-s0-5{
@@ -252,14 +280,6 @@ div.opts{
 	margin-right: 0;
 	clear: right;
 }
-/*
-.case .item:first-of-type{
-	margin-left: 0;
-}
-
-.case .item:last-of-type{
-	margin-right: 0;
-}*/
 
 .case .item img{
 	border-radius: 4px;

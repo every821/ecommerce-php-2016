@@ -12,9 +12,9 @@
 		<span type = "button" class = "overlay-close"></span>
 		<ul>
 			<li><a href = "index.html">Home</a></li>
-			<li><a href = "#">Books</a></li>
-			<li><a href = "#">Electronics</a></li>
-			<li><a href = "#">Other</a></li>
+			<li><a href = "books.php">Books</a></li>
+			<li><a href = "electronics.php">Electronics</a></li>
+			<li><a href = "other.php">Other</a></li>
 		</ul>
 	</div>
 
@@ -25,33 +25,19 @@
 				<p class = "brand-logo"><a href = "index.html" class = "white-text">DBMS Project</a></p>
 			</div>
 			<div class = "col s9 full-height">
-				<p class = "col s1 offset-s8-5 center-align icons" id = "account">
-					<!-- IF NOT LOGGED IN  -->
-					<a href = "login.html"><i class = "material-icons waves-effect">account_circle</i></a>
+				<div class = "col s1 offset-s10 center-align icons" id = "account">
+					<!-- IF NOT LOGGED IN -->
+					<!-- <a href = "login.html"><i class = "material-icons waves-effect">account_circle</i></a> -->
 					
 					<!-- IF A USER IS LOGGED IN -->
-					<!-- <a href = "javscript:void(0)" data-target = ""><i class = "material-icons waves-effect">account_circle</i></a> -->
-				</p>
-				<p class = "col s1 offset-s0-5 center-align icons" id = "shoppingcart">
-					<i class = "material-icons waves-effect">shopping_cart</i>
-				</p>
-				<p class = "col s1 offset-s0-5 center-align icons" id = "menu">
-					<i class = "material-icons waves-effect">menu</i>
-				</p>
-				<!-- 
-				<div class = "" id = "logged-in-user-opts">
-					<div class = "" id = "account-opts">
-						<a href = "">
-							My Account
-						</a>
-						<a href = "">
-							Logout
-						</a>
-					</div>
-					<div class = "" id = "cart-opts">
-					</div>
+					<a href = "javscript:void(0)" data-target = ""><i class = "material-icons waves-effect">account_circle</i></a>
+					<ul>
+						<li></li>
+					</ul>
 				</div>
-				-->
+				<div class = "col s1 center-align icons" id = "menu">
+					<i class = "material-icons waves-effect">menu</i>
+				</div> 
 			</div>
 		</div>
 

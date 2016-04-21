@@ -14,11 +14,17 @@ $(document).ready(function(){
 		e.preventDefault();
 	});	
 
+	$accountOpts = $("#account-opts");
+	$accountOpts.hide();
+	$("div#account").on("click",function(){
+		$accountOpts.fadeToggle("slow");
+	});
+
 	// scripts for navbar
 	(function() {
 
 		var $container = $("div#page"),
-			$triggerBtn = $("p#menu"),
+			$triggerBtn = $("div#menu"),
 			$overlay = $("div.overlay"),
 			$closeBtn = $("span.overlay-close");
 

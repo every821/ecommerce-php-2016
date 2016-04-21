@@ -41,6 +41,15 @@ body{
 	color: #fff !important;
 }
 
+
+#profile-menu ul li button{
+	font-size: 0.9em;
+	border-radius: 18px;
+	color: #9097A9;
+	margin-top: 10px;
+	background: #232733;	
+}
+
 #profile-photo{
 	/*border-radius: 50%;*/
 }
@@ -129,6 +138,40 @@ body{
 	border-bottom: 2px solid rgba(0, 0, 0, 0.10);
 }
 
+#editprofile {
+	position: relative;
+}
+
+#editprofile p{
+	font-family: "SourceSansPro";
+	font-size: 2em;
+	font-weight: bold;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.10);
+	padding-bottom: 10px;
+}
+
+#editprofile #change-profile-image input{
+	display: none;
+}
+
+#editprofile #change-profile-image label{
+	cursor: pointer;
+}
+
+#editprofile #change-profile-image{
+	padding: 50px 70px;
+}
+
+#editprofile #change-profile-image img{
+	transform: rotateZ(4deg);
+}
+
+#editprofile a{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
 #empty-message{
 	justify-content: center;
 	align-items: center;
@@ -207,3 +250,32 @@ thead{
 tbody tr{
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+#addproducts #image-upload-area{
+	display: flex !important;
+	flex-wrap: wrap;
+	justify-content : center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#addproducts #image-upload-area p{
+	width: 100%;
+	font-weight: bold;
+	color: #6A738A;
+}
+
+#addproducts div.image-upload{
+	display: flex;
+	align-self : flex-start;
+	margin: 0px calc((100%/12) * 0.25);
+}
+
+#addproducts div.image-upload input{
+	display: none;
+}
+
+#addproducts div.image-upload label{
+	cursor: pointer;
+}
+
