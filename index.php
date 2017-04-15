@@ -38,7 +38,7 @@
 									if($_SESSION['type']=='member') { 
 								?>
 									<li><a href="userprofile.php" class=""><i class="material-icons left prefix">person</i><?php echo $_SESSION['name']; ?></a></li>
-									<li><i class="material-icons left">shopping_cart</i><span id="cart_items_no">
+									<li id = "cart-no-of-items"><i class="material-icons left">shopping_cart</i><span id="cart_items_no">
 										<?php
 											include('php/cart_items.php');
 											echo mysqli_num_rows($result);
@@ -72,26 +72,81 @@
 		</div>
 
 		<div class="row">
-			<img class="responsive-img" src="images/othercover.jpg"/>
+			<img class="responsive-img" src="images/cover15.jpg"/>
 		</div>
 
-		<div class="row showcase" id="others-showcase">
+		<div class="row showcase" id="home-showcase">
 
-			<div class="col m10 offset-m1 s12 case" id="others">
+			<div class="col m10 offset-m1 s12 case" id="books">
+				<p class="col s12 valign-wrapper">
+					<a href="books.php" class="black-text tooltipped" data-tooltip="Click for more items" data-position="right">
+						Books<i class="right material-icons small valign">keyboard_arrow_right</i>
+					</a>
+				</p>
 				<?php
-					require_once('php/others.php');
-					for($i=0;$i<sizeof($row);$i++) {
+					require_once('php/books.php');
+					for($i=0;$i<4;$i++) {
 						if(isset($row[$i])) {
 							echo "<a class='col s2-5 white hoverable item center-align black-text' href='itempage.php?id=".$row[$i]['i_id']."'>
 									<img src='images/itemimages/".$row[$i]['i_id']."/1.jpg' class='responsive-img'>
 									<p class='item-name'>".$row[$i]['name']."</p>
 									<p class='item-desc no-margin'>".$row[$i]['description']."</p>
-									<p class='item-price green-text'>".$row[$i]['price']."</p>
-									<form action='nothing.php'> 
-										<button class='btn-floating btn-large green white-text' id='buy-btn' type='submit'>
-											<i class='material-icons waves-effect waves-light'>add_shopping_cart</i>
-										</button>
-									</form>
+									<p class='item-price green-text'>Rs. ".$row[$i]['price']."</p>
+									<button class='btn-floating btn-large green white-text' id='buy-btn' type='submit' data-id='".$row[$i]['i_id']."'>
+										<i class='material-icons waves-effect waves-light'>add_shopping_cart</i>
+									</button>
+								</a>";
+						}
+						else
+							break;
+					}
+				?>
+			</div>
+
+			<div class="col m10 offset-m1 s12 case" id="electronics">
+				<p class="col s12 valign-wrapper">
+					<a href="electronics.php" class="black-text tooltipped" data-tooltip="Click for more items" data-position="right">
+						Electronics<i class="right material-icons small valign">keyboard_arrow_right</i>
+					</a>
+				</p>
+				<?php
+					require_once('php/electronics.php');
+					for($i=0;$i<4;$i++) {
+						if(isset($row[$i])) {
+							echo "<a class='col s2-5 white hoverable item center-align black-text' href='itempage.php?id=".$row[$i]['i_id']."'>
+									<img src='images/itemimages/".$row[$i]['i_id']."/1.jpg' class='responsive-img'>
+									<p class='item-name'>".$row[$i]['name']."</p>
+									<p class='item-desc no-margin'>".$row[$i]['description']."</p>
+									<p class='item-price green-text'>Rs. ".$row[$i]['price']."</p>
+									<button class='btn-floating btn-large green white-text' id='buy-btn' type='submit' data-id='".$row[$i]['i_id']."'>
+										<i class='material-icons waves-effect waves-light'>add_shopping_cart</i>
+									</button>
+								</a>";
+						}
+						else
+							break;
+					}
+				?>
+			</div>
+
+			<div class="col m10 offset-m1 s12 case" id="new-products">
+				<p class="col s12 valign-wrapper">
+					<a href="other.php" class="black-text tooltipped" data-tooltip="Click for more items" data-position="right">
+						Other<i class="right material-icons small valign">keyboard_arrow_right</i>
+					</a>
+				</p>
+				<?php
+					require_once('php/others.php');
+					for($i=0;$i<4;$i++) {
+						if(isset($row[$i])) {
+							echo "<a class='col s2-5 white hoverable item center-align black-text' href='itempage.php?id=".$row[$i]['i_id']."'>
+									<img src='images/itemimages/".$row[$i]['i_id']."/1.jpg' class='responsive-img'>
+									<p class='item-name'>".$row[$i]['name']."</p>
+									<p class='item-desc no-margin'>".$row[$i]['description']."</p>
+									<p class='item-price green-text'>Rs. ".$row[$i]['price']."</p>
+									<button class='btn-floating btn-large green white-text' id='buy-btn' type='submit' data-id='".$row[$i]['i_id']."'>
+										<i class='material-icons waves-effect waves-light'>add_shopping_cart</i>
+									</button>
 								</a>";
 						}
 						else
@@ -111,25 +166,25 @@
 				<p class="white-text">Overview</p>
 				<ul>
 					<li><a href="#">About Us</a></li>
-					<li><a href="#">FAQs</a></li>
+					<!-- <li><a href="#">FAQs</a></li> -->
 					<li><a href="#">Terms</a></li>
-					<li><a href="#">Privacy</a></li>
+					<!-- <li><a href="#">Privacy</a></li> -->
 				</ul>
 			</div>
 			<div class="col m4 section">
-				<p class="white-text">Create an account</p>
+				<p class="white-text">Account</p>
 				<ul>
-					<li><a href="#">Create Account</a></li>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Edit </a></li>
+					<li><a href="login.php">Create Account</a></li>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="login.php">Edit </a></li>
 				</ul>
 			</div>
 			<div class="col m4 section">
 				<p class="white-text">Address</p>
 				<ul>
-					<li>580 Cali Street</li>
-					<li>16 Floor,San Frasco, AS</li>
-					<li>Phone : 209310922</li>
+					<li>IIIT Allahabad,</li>
+					<li>Jhalwa,</li>
+					<li>Allahabad - 211012</li>
 				</ul>
 			</div>
 		</div>

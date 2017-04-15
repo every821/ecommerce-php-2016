@@ -4,11 +4,12 @@
 	<title>IIITA-Cart</title>
 	<link rel="stylesheet" href="css/materialize.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/itemstyles.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class=""> 
 
-	<div class="overlay overlay-contentpush">
+<div class="overlay overlay-contentpush">
 		<span type="button" class="overlay-close"></span>
 		<ul>
 			<li><a href="index.php">Home</a></li>
@@ -71,37 +72,56 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<img class="responsive-img" src="images/othercover.jpg"/>
-		</div>
-
-		<div class="row showcase" id="others-showcase">
-
-			<div class="col m10 offset-m1 s12 case" id="others">
-				<?php
-					require_once('php/others.php');
-					for($i=0;$i<sizeof($row);$i++) {
-						if(isset($row[$i])) {
-							echo "<a class='col s2-5 white hoverable item center-align black-text' href='itempage.php?id=".$row[$i]['i_id']."'>
-									<img src='images/itemimages/".$row[$i]['i_id']."/1.jpg' class='responsive-img'>
-									<p class='item-name'>".$row[$i]['name']."</p>
-									<p class='item-desc no-margin'>".$row[$i]['description']."</p>
-									<p class='item-price green-text'>".$row[$i]['price']."</p>
-									<form action='nothing.php'> 
-										<button class='btn-floating btn-large green white-text' id='buy-btn' type='submit'>
-											<i class='material-icons waves-effect waves-light'>add_shopping_cart</i>
-										</button>
-									</form>
-								</a>";
-						}
-						else
-							break;
-					}
-				?>
+		<div class="row item-details" id="item-summary">
+			<?php
+				include_once('php/item_page_desc.php');
+			?>
+			<div class="col s12 m10 offset-m1">
+				<div class="col s12 m6 " id="item-gallery">
+					<div class="row valign-wrapper">
+						<div class="col s12 valign">
+							<?php echo"<img class='responsive-img' id='image-shown' src='images/itemimages/".$i_id."/1.jpg'>"; ?>
+						</div>
+					</div>
+					<div class="row">
+						<ul>
+							<?php
+								echo "<li class='col s3 item-images'><img class='responsive-img' src='images/itemimages/".$i_id."/1.jpg'></li>";
+								if(file_exists("images/itemimages/".$i_id."/2.jpg"))
+									echo "<li class='col s3 item-images'><img class='responsive-img' src='images/itemimages/".$i_id."/2.jpg'></li>";
+								if(file_exists("images/itemimages/".$i_id."/3.jpg"))
+									echo "<li class='col s3 item-images'><img class='responsive-img' src='images/itemimages/".$i_id."/3.jpg'></li>";
+								if(file_exists("images/itemimages/".$i_id."/4.jpg"))
+									echo "<li class='col s3 item-images'><img class='responsive-img' src='images/itemimages/".$i_id."/4.jpg'></li>";
+							?>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col m5 offset-m1 s12" id="item-quick-info">
+					<p class="" id="item-name"><?php echo $row1['name']; ?></p>
+					<p class="" id="seller-info">Seller : <?php echo $row2['s_name']; ?></p>
+					<!-- <form class="col s12" action="" method="post"> -->
+						<div class=" col s12">
+							<p class="green-text text-darken-2" id="item-price">Rs. <?php echo $row1['price']; ?></p>
+						</div>
+						<div class="col s12 center">
+							<button class="btn center green waves-effect waves-light" type="submit" id="add_cart_btn" data-id=<?php echo $i_id; ?> >
+								<i class="material-icons left">add_shopping_cart</i>Add to Cart
+							</button>
+						</div>
+					<!-- </form> -->
+				</div>
 			</div>
 
 		</div>
 
+		<div class="row item-details" id="item-description">
+			<div class="col m10 offset-m1 s12">
+				<h4 class="bold">Product Description</h4>
+				<p><?php echo $row1['description']; ?></p>
+			</div>
+ 		</div>
 
 	</div>
 
@@ -111,25 +131,25 @@
 				<p class="white-text">Overview</p>
 				<ul>
 					<li><a href="#">About Us</a></li>
-					<li><a href="#">FAQs</a></li>
+					<!-- <li><a href="#">FAQs</a></li> -->
 					<li><a href="#">Terms</a></li>
-					<li><a href="#">Privacy</a></li>
+					<!-- <li><a href="#">Privacy</a></li> -->
 				</ul>
 			</div>
 			<div class="col m4 section">
-				<p class="white-text">Create an account</p>
+				<p class="white-text">Account</p>
 				<ul>
-					<li><a href="#">Create Account</a></li>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Edit </a></li>
+					<li><a href="login.php">Create Account</a></li>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="login.php">Edit </a></li>
 				</ul>
 			</div>
 			<div class="col m4 section">
 				<p class="white-text">Address</p>
 				<ul>
-					<li>580 Cali Street</li>
-					<li>16 Floor,San Frasco, AS</li>
-					<li>Phone : 209310922</li>
+					<li>IIIT Allahabad,</li>
+					<li>Jhalwa,</li>
+					<li>Allahabad - 211012</li>
 				</ul>
 			</div>
 		</div>
@@ -140,9 +160,6 @@
 <!-- scripts go here -->
 <script src="js/jquery-1.12.2.js"></script>
 <script src="js/materialize.js"></script> 
-<script src="js/scripts.js"></script> 
-<script>
-
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
